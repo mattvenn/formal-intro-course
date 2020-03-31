@@ -1,0 +1,14 @@
+[options]
+mode prove
+depth 15
+
+[engines]
+smtbmc yices
+
+[script]
+read_verilog -formal -DFORMAL_MEMLOCK_CHECK -DFORMAL_INIT compute.v
+prep -top marlann_compute
+cutpoint marlann_compute_mul2
+
+[files]
+compute.v
