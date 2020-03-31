@@ -4,3 +4,6 @@
 [submodule "exercises/part1/traffic-lights"]
 	path = exercises/part1/traffic-lights
 	url = git@github.com:SymbioticEDA/traffic-lights.git
+[submodule "exercises/part2/fv-busy-counter"]
+	path = exercises/part2/fv-busy-counter
+	url = git@github.com:mattvenn/fv-busy-counter.git
