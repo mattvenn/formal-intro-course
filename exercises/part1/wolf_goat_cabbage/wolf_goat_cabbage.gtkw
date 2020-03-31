@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*] Tue Jun 11 18:32:57 2019
+[*]
+[dumpfile] "/home/matt/work/fpga/symbiotic-eda/wosh-presentation/wolf-goat-cabbage/wolf_goat_cabbage/engine_0/trace0.vcd"
+[dumpfile_mtime] "Tue Jun 11 18:31:51 2019"
+[dumpfile_size] 1288
+[savefile] "/home/matt/work/fpga/symbiotic-eda/wosh-presentation/wolf-goat-cabbage/wolf_goat_cabbage.gtkw"
+[timestart] 0
+[size] 1479 867
+[pos] 879 526
+*-4.850154 70 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 253
+[signals_width] 173
+[sst_expanded] 1
+[sst_vpaned_height] 252
+@25
+smt_step
+@28
+wolf_goat_cabbage.clk
+@200
+-
+@28
+wolf_goat_cabbage.c
+wolf_goat_cabbage.g
+wolf_goat_cabbage.w
+@200
+-
+@28
+wolf_goat_cabbage.bank_m
+wolf_goat_cabbage.bank_c
+wolf_goat_cabbage.bank_g
+wolf_goat_cabbage.bank_w
+[pattern_trace] 1
+[pattern_trace] 0
