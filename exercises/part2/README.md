@@ -85,5 +85,9 @@ Use the following signals to build an assertion:
     reg [$clog2(MASTER_IFACE_CNT)-1:0] active_iface;    // internal signal to show which master is currently active/connected
     input [MASTER_IFACE_CNT-1:0] do_read,               // which master wants to read
     input [MASTER_IFACE_CNT-1:0] do_write,              // which master wants to write
-    output reg [MASTER_IFACE_CNT-1:0] is_idle,          // which master has control
+    output reg [MASTER_IFACE_CNT-1:0] is_idle,          // masters have to wait for is_idle to go high
 
+Extra credit:
+
+* get some cover traces of the arbiter in action
+* write some assumption that define well behaved masters & slaves
