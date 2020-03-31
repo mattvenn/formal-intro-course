@@ -1,0 +1,14 @@
+[options]
+mode prove 
+
+[engines]
+smtbmc
+
+[script]
+read -noverific
+read -formal qpimem_arbiter.v
+prep -top qpimem_arbiter
+
+[files]
+qpimem_arbiter.v
+
