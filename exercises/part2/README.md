@@ -85,7 +85,7 @@ Use the following signals to build an assertion:
     reg [$clog2(MASTER_IFACE_CNT)-1:0] active_iface;    // internal signal to show which master is currently active/connected
     input [MASTER_IFACE_CNT-1:0] do_read,               // which master wants to read
     input [MASTER_IFACE_CNT-1:0] do_write,              // which master wants to write
-    output reg [MASTER_IFACE_CNT-1:0] is_idle,          // masters have to wait for is_idle to go high
+	output reg [MASTER_IFACE_CNT-1:0] is_idle,          // masters have to wait if is_idle is high
 
 Extra credit:
 

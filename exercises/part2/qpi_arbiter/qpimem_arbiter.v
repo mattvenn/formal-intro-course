@@ -47,7 +47,7 @@ module qpimem_arbiter #(
 	input [MASTER_IFACE_CNT-1:0] do_read,           // master wants to read
 	input [MASTER_IFACE_CNT-1:0] do_write,          // master wants to write
 	output reg [MASTER_IFACE_CNT-1:0] next_word,    // When next_word is high, put next word on wdata or read word from rdata
-	output reg [MASTER_IFACE_CNT-1:0] is_idle,      // masters have to wait for is_idle to go high
+	output reg [MASTER_IFACE_CNT-1:0] is_idle,      // masters have to wait if is_idle is high
 	
 	output reg [31:0] s_addr,                       // output addr to qpimem iface
 	output reg [31:0] s_wdata,                      // output data to qpimem
