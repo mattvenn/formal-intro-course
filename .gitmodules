@@ -1,12 +1,12 @@
 [submodule "exercises/part1/ws2812-core"]
 	path = exercises/part1/ws2812-core
-	url = git@github.com:mattvenn/ws2812-core
+	url = https://github.com/mattvenn/ws2812-core
 [submodule "exercises/part1/traffic-lights"]
 	path = exercises/part1/traffic-lights
-	url = git@github.com:SymbioticEDA/traffic-lights.git
+	url = https://github.com/SymbioticEDA/traffic-lights.git
 [submodule "exercises/part2/fv-busy-counter"]
 	path = exercises/part2/fv-busy-counter
-	url = git@github.com:mattvenn/fv-busy-counter.git
+	url = https://github.com/mattvenn/fv-busy-counter.git
 [submodule "exercises/part2/traffic-lights"]
 	path = exercises/part2/traffic-lights
-	url = git@github.com:SymbioticEDA/traffic-lights.git
+	url = https://github.com/SymbioticEDA/traffic-lights.git
