@@ -56,6 +56,7 @@ Generate a trace that shows the LED data on the data output pin changing.
 ### Method
 
 * Write a cover statement that will generate a trace of the data pin changing.
+* Add your cover to ws2812.v at the bottom of the file in the FORMAL section.
 * Run the tools and generate a trace. Can you manage it? How?
 
 ## Cover some of the Traffic Light demo behaviour
