@@ -31,19 +31,16 @@ add the traces for the movements of the wolf, goat and cabbage.
 
 ### Aim
 
-The ws2812 design generates control data for ws2812 'intelligent' LEDs. A long string
-of LEDs can be connected with a single wire.
-
-We want to see a quick trace that shows the module ready to transmit some data.
+You're working in a team and someone's just passed you some verilog. It's meant to drive
+some LEDs or something. You want to quickly check that the data is flowing correctly,
+so rather than bother setting up a testbench, you write a quick cover statement and break
+out the formal tools.
 
 ### Method
 
-Instead of writing a test bench, you will write a cover statement that transfers some 
-data to the module ready for LED transmission.
-
 The internal register used for representing the last LED in the sequence is led_reg[7].
 
-* Write a cover statement that covers this register being loaded with some value you choose.
+* Write a cover statement on the `ifdef FORMAL section of ws2812.v that covers the register being loaded with some value you choose.
 * Copy the .sby file from wolf_goat_cabbage.sby and adapt it for the ws2812 design. 
 * Run the tools and check the trace.
 
