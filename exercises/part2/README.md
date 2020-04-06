@@ -17,6 +17,7 @@ Take a look at the .sby file. We have 2 tasks here: cover & prove. When run with
 no arguments; sby will run all the tasks. To run just one, provide the name of the task as an
 argument to sby: sby -f busyctr.sby prove
 
+0. Write a cover statement that covers the start of the counter. Run it with sby -f busyctr.sby cover. Do you get the trace you expected?
 1. Write a simple assertion to prove that o_busy works as expected.
 2. Use $past to prove the counter is counting down.
 3. Write an assumption to cover the behaviour of i_start_signal
