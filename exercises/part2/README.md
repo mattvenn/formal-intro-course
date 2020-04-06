@@ -1,30 +1,5 @@
 # Exercises part 2
 
-## Write safety properties for MARLANN memory
-
-### Aim
-
-The MARLANN machine learning accelerator features a 10 step pipeline that parallelises the 
-computation. The target FPGA has a large memory used for the coefficients, but it is single ported,
-so reads and writes cannot happen on the same cycle.
-
-We want to know that no matter what instructions are read in what order, the memory never gets a simultaneous
-read and write request.
-
-### Method
-
-Write a single assertion that proves that the pipeline is memory safe.
-
-The relevant signals are:
-
-	reg        mem_rd0_en;
-	reg        mem_rd1_en;
-	reg [ 7:0] mem_wr_en;
-
-Write your assertion at line 198
-
-Take a look at the .sby file. What do you think the cutpoint line does?
-
 ## Prove busy counter example works as expected
 
 ### Aim
