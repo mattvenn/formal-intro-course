@@ -29,12 +29,12 @@ Take a look at the .sby file. What do you think the cutpoint line does?
 
 ### Aim
 
-1. Assume that once raised, i_start_signal will remain high until it
+1. o_busy will *always* be true any time the counter is non-zero.
+2. If the counter is non-zero, it should always be counting down
+3. Assume that once raised, i_start_signal will remain high until it
     is both high and the counter is no longer busy.
     Following (i_start_signal)&&(!o_busy), i_start_signal is no
     longer constrained--until it is raised again.
-2. o_busy will *always* be true any time the counter is non-zero.
-3. If the counter is non-zero, it should always be counting down
 
 ### Method
 
@@ -42,10 +42,10 @@ Take a look at the .sby file. We have 2 tasks here: cover & prove. When run with
 no arguments; sby will run all the tasks. To run just one, provide the name of the task as an
 argument to sby: sby -f busyctr.sby prove
 
-1. Write an assumption to cover the behaviour of i_start_signal
-2. You will need to make use of $past to make assumptions about i_start_signal.
-3. Write a simple assertion to prove that o_busy works as expected.
-4. Use $past to prove the counter is counting down.
+1. Write a simple assertion to prove that o_busy works as expected.
+2. Use $past to prove the counter is counting down.
+3. Write an assumption to cover the behaviour of i_start_signal
+4. You will need to make use of $past to make assumptions about i_start_signal.
 
 ## Prove that the traffic lights example works
 
