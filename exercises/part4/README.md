@@ -17,7 +17,6 @@ a new increment variable and allowing the solver to choose the values with anyse
 We want to make sure the design still passes the proof we made earlier to ensure the abstraction
 is correct.
 
-
 ### Method
 
 * change the MAX count to 1000
