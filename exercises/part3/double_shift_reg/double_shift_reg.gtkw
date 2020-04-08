@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*] Wed Jun 12 08:44:42 2019
+[*]
+[dumpfile] "/home/matt/work/fpga/symbiotic-eda/wosh-presentation/double-shift-reg/double_shift_reg/engine_0/trace_induct.vcd"
+[dumpfile_mtime] "Wed Jun 12 08:43:44 2019"
+[dumpfile_size] 4879
+[savefile] "/home/matt/work/fpga/symbiotic-eda/wosh-presentation/double-shift-reg/double_shift_reg.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -598 175
+*-7.025105 162 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] double_shift_reg.
+[sst_width] 253
+[signals_width] 231
+[sst_expanded] 1
+[sst_vpaned_height] 152
+@420
+smt_step
+@28
+double_shift_reg.i_clk
+double_shift_reg.i_ce
+@200
+-
+@28
+double_shift_reg.a_data
+double_shift_reg.b_data
+@29
+double_shift_reg.o_data
+@200
+-
+@22
+double_shift_reg.a.sreg[7:0]
+double_shift_reg.b.sreg[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

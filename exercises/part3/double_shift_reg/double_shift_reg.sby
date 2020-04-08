@@ -1,0 +1,14 @@
+[options]
+mode prove
+
+[engines]
+smtbmc
+
+[script]
+read -formal shift_reg.v
+read -formal double_shift_reg.v
+prep -top double_shift_reg
+
+[files]
+double_shift_reg.v
+shift_reg.v
