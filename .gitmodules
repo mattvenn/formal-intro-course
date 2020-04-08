@@ -10,3 +10,6 @@
 [submodule "exercises/part2/traffic-lights"]
 	path = exercises/part2/traffic-lights
 	url = https://github.com/SymbioticEDA/traffic-lights.git
+[submodule "exercises/part3/traffic-lights"]
+	path = exercises/part3/traffic-lights
+	url = https://github.com/SymbioticEDA/traffic-lights.git
