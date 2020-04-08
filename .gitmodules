@@ -16,3 +16,6 @@
 [submodule "exercises/part3/fv-busy-counter"]
 	path = exercises/part3/fv-busy-counter
 	url = https://github.com/mattvenn/fv-busy-counter
+[submodule "exercises/part4/fv-busy-counter"]
+	path = exercises/part4/fv-busy-counter
+	url = https://github.com/mattvenn/fv-busy-counter
