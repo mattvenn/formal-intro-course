@@ -25,7 +25,7 @@ Write your assertion at line 198
 
 Take a look at the .sby file. What do you think the cutpoint line does?
 
-## Make a full proof for the simple counter with overflow set to 10000.
+## Make a full proof for the simple counter with overflow set to 1000.
 
 ### Aim
 
@@ -34,12 +34,18 @@ Prove the busy counter works for all time with a full proof.
 ### Description
 
 Previously we just did a BMC. This time we will add k-induction.
+Then we will add a new assertion to prove the counter will never 
+equal 2000.
 
 ### Method
 
-* Change the rollover of the simple counter to 10000
-* update the sby file to change the mode to 'prove'
+* Change the MAX_AMOUNT of the simple counter to 1000
+* update the sby file to change the mode from bmc to prove
 * run the tools and verify the counter works correctly
+* add a new assertion that proves the counter will never equal 2000. 
+    Do you expect it to pass or fail?
+* run sby to check your expectation. Look at the logs from the tool, what is different?
+* If it fails, the trace will be written as trace_induct.vcd
 
 ## Find 2 ways to make a full proof of the double shift register.
 
