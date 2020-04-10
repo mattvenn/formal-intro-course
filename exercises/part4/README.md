@@ -40,3 +40,12 @@ As the timing interval takes too long, we need to change it to an abstract count
 * run the tools and verify you can't get a trace
 * change the counter to an abstract counter
 * run the tools and check you can generate a trace.
+
+## Another abstraction demo
+
+This is a great demo from Claire Wolf. It illustrates an abstract counter without modifying the original
+design. Ideally when doing verification we'd like to avoid changing any of the design files. This
+example achieves that by changing assumptions to assertions, a cutpoint, and binding properties to the design
+file.
+
+https://github.com/YosysHQ/SymbiYosys/tree/master/docs/examples/abstract
