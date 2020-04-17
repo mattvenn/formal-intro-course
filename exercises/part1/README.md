@@ -41,7 +41,7 @@ out the formal tools.
 The internal register used for representing the last LED in the sequence is led_reg[7].
 
 * Write a cover statement on the `ifdef FORMAL section of ws2812.v that covers the register being loaded with some value you choose.
-* Copy the .sby file from wolf_goat_cabbage.sby and adapt it for the ws2812 design. 
+* Copy the .sby file from wolf_goat_cabbage.sby and adapt it for the ws2812 design. We only need the ws2812.v file.
 * Run the tools and check the trace.
 
 ## Try to cover led control pin goes high in ws2812 core
