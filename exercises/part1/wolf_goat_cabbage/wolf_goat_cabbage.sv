@@ -24,7 +24,7 @@ module wolf_goat_cabbage (input clk, input w, g, c);
 
 		// we want wolf, goat, and cabbage on the 2nd river bank
         // write a cover statement that will result in the desired combination
-        cover(bank_w == 1 && bank_g == 1 && bank_c == 1);
+        cover(YOUR COVER STATEMENT HERE);
 
 		// don't leave wolf and goat unattended
 		if (bank_w != bank_person) begin
