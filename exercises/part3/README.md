@@ -25,7 +25,7 @@ Write your assertion at line 198
 
 Take a look at the .sby file. What do you think the cutpoint line does?
 
-## Make a full proof for the simple counter with overflow set to 1000.
+## Make a full proof for the busy counter with overflow set to 1000.
 
 ### Aim
 
@@ -46,6 +46,7 @@ equal 2000.
     Do you expect it to pass or fail?
 * run sby to check your expectation. Look at the logs from the tool, what is different?
 * If it fails, the trace will be written as trace_induct.vcd
+* How can you change the assertion to make it stronger and to pass induction?
 
 ## Find 2 ways to make a full proof of the double shift register.
 
