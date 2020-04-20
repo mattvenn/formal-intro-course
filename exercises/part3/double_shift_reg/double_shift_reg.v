@@ -16,5 +16,18 @@ module double_shift_reg(i_clk, i_ce, i_data, o_data);
 
     `ifdef FORMAL
         // your properties here
+        reg [1:0] f_counter = 0;
+        always @(posedge i_clk) begin
+            // assert the outputs are the same
+            assert(!o_data);
+
+            // a trick to flush the registers, useful for when we don't have the licensed tools
+            f_counter <= f_counter + 1;
+            if(&f_counter)
+                assume(i_ce);
+
+            // strongest - but only available with licensed tool
+            // assert(a.sreg == b.sreg);
+        end
     `endif
 endmodule
