@@ -1,9 +1,9 @@
-// A person needs to cross a river with a wolf, a goat and a cabbage. His boat is only large
-// enough to carry himself and one of his three possessions, so he must transport these
-// items one at a time. However, if he leaves the wolf and the goat together unattended,
-// then the wolf will eat the goat; similarly, if he leaves the goat and the cabbage together
-// unattended, then the goat will eat the cabbage. How can the man get across safely with
-// his three items?
+// A person needs to cross a river with a wolf, a goat and a cabbage. Their boat is only large
+// enough to carry themselves and one of their three possessions, so they must transport these
+// items one at a time. However, if they leave the wolf and the goat together unattended,
+// then the wolf will eat the goat; similarly, if they leave the goat and the cabbage together
+// unattended, then the goat will eat the cabbage. How can the person get across safely with
+// their three items?
 
 module wolf_goat_cabbage (input clk, input w, g, c);
 	// everyone starts at the 1st river bank
@@ -13,7 +13,7 @@ module wolf_goat_cabbage (input clk, input w, g, c);
 	reg bank_person = 0; // person who drives the boat
 
 	always @(posedge clk) begin
-		// man travels and takes the selected item with him
+		// person travels and takes the selected item with him
 		if (w && (bank_w == bank_person)) bank_w <= !bank_person;
 		if (g && (bank_g == bank_person)) bank_g <= !bank_person;
 		if (c && (bank_c == bank_person)) bank_c <= !bank_person;
