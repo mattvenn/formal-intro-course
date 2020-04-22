@@ -13,9 +13,9 @@
 
 ### Method
 
-Take a look at the .sby file. We have 2 tasks here: cover & prove. When run with
+Take a look at the .sby file. We have 2 tasks here: cover & bmc. When run with
 no arguments; sby will run all the tasks. To run just one, provide the name of the task as an
-argument to sby: sby -f busyctr.sby prove
+argument to sby: sby -f busyctr.sby bmc
 
 0. Write a cover statement that covers the start of the counter. Run it with sby -f busyctr.sby cover. Do you get the trace you expected?
 1. Write a simple assertion to prove that o_busy works as expected.
