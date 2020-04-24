@@ -124,7 +124,7 @@ module marlann_compute #(
 			4, 5, 6: memlock_mask = 1 << 0;
 
 			/* LdSet, LdSet0, LdSet1, LdAdd, LdAdd0, LdAdd1 */
-			28, 29, 30, 32, 33, 34: begin
+			28, 29, 30, 32, 33, 33: begin
 				memlock_mask = 1 << 4;
 			end
 
@@ -196,6 +196,7 @@ module marlann_compute #(
 	always @* begin
 		if (!reset) begin
             // your assertion here
+            assert(mem_rd0_en + mem_rd1_en + |mem_wr_en <= 1);
 		end
 	end
 `endif
@@ -690,7 +691,7 @@ module marlann_compute_mul2 (
 	input  [15:0] A, B,
 	output [31:0] X
 );
-`ifndef SYNTHESIS
+`ifdef SYNTHESIS
 	reg [15:0] r1A, r2A, r3A;
 	reg [15:0] r1B, r2B, r3B;
 
