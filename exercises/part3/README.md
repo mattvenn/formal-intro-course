@@ -39,7 +39,7 @@ equal 2000.
 
 ### Method
 
-* Change the MAX_AMOUNT of the simple counter to 1000
+* Change the MAX_AMOUNT of the busy counter to 1000
 * update the sby file to change the mode from bmc to prove
 * run the tools and verify the counter works correctly
 * add a new assertion that proves the counter will never equal 2000. 
