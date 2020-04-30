@@ -124,7 +124,7 @@ module marlann_compute #(
 			4, 5, 6: memlock_mask = 1 << 0;
 
 			/* LdSet, LdSet0, LdSet1, LdAdd, LdAdd0, LdAdd1 */
-			28, 29, 30, 32, 33, 33: begin
+			28, 29, 30, 32, 33, 34: begin
 				memlock_mask = 1 << 4;
 			end
 
