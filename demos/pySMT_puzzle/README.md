@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mattvenn/formal-intro-course/blob/master/demos/pySMT_puzzle/pysmt_puzzle.ipynb)
+
 # This is the tutorial example of pySMT
 
 This example shows how to:
