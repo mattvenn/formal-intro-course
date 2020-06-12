@@ -196,7 +196,6 @@ module marlann_compute #(
 	always @* begin
 		if (!reset) begin
             // your assertion here
-            assert(mem_rd0_en + mem_rd1_en + |mem_wr_en <= 1);
 		end
 	end
 `endif
