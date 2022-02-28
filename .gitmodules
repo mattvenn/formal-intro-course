@@ -3,16 +3,16 @@
 	url = https://github.com/mattvenn/ws2812-core
 [submodule "exercises/part1/traffic-lights"]
 	path = exercises/part1/traffic-lights
-	url = https://github.com/SymbioticEDA/traffic-lights.git
+	url = https://github.com/YosysHQ/training-traffic-lights.git
 [submodule "exercises/part2/fv-busy-counter"]
 	path = exercises/part2/fv-busy-counter
 	url = https://github.com/mattvenn/fv-busy-counter.git
 [submodule "exercises/part2/traffic-lights"]
 	path = exercises/part2/traffic-lights
-	url = https://github.com/SymbioticEDA/traffic-lights.git
+	url = https://github.com/YosysHQ/training-traffic-lights.git
 [submodule "exercises/part3/traffic-lights"]
 	path = exercises/part3/traffic-lights
-	url = https://github.com/SymbioticEDA/traffic-lights.git
+	url = https://github.com/YosysHQ/training-traffic-lights.git
 [submodule "exercises/part3/fv-busy-counter"]
 	path = exercises/part3/fv-busy-counter
 	url = https://github.com/mattvenn/fv-busy-counter
